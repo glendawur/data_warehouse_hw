@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="5/22/2019 11:32:42 AM"
@@ -11,9 +11,2593 @@
   DTS:LocaleID="1049"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionGUID="{789DCFE8-7DCB-4170-ABB6-017415F103C6}">
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{307505A4-2BFA-4166-B438-96B1306EF875}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CSV_rus_output]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{3BA9719B-19E8-4FF6-8956-CE92175A933A}"
+      DTS:ObjectName="CSV_rus_output">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1049"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="D:\Projects\УД\КДЗ по УД, DW\East_Superstore_0.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Row ID"
+              DTS:DTSID="{0CC668EC-D0D0-4A4F-9350-F9C838A75245}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Order ID"
+              DTS:DTSID="{7E6191B6-9F52-4BFA-90D9-D823802180ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Order Date"
+              DTS:DTSID="{CB9DF491-D009-4AF5-B28F-15AB98F11B56}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Ship Date"
+              DTS:DTSID="{6A835563-4FF6-43A1-BCC7-C458351A5B12}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Ship Mode"
+              DTS:DTSID="{0F74CB97-8638-451C-864C-DBFE61D0A411}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Customer ID"
+              DTS:DTSID="{3BB42515-25C1-44A8-B65A-9E1C18A61040}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Customer Name"
+              DTS:DTSID="{E100D609-B159-454B-A0DC-408F44FE8129}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Segment"
+              DTS:DTSID="{0176E1B8-55BB-46B7-8361-B61859F2B273}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{881F4D84-59F4-41E8-A578-BED8E5292D47}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{A499ACC4-BD0D-4BFB-A8BC-3938CDD99713}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State"
+              DTS:DTSID="{DD5E53D5-2CDD-4EA3-B036-F470454CD0C8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Postal Code"
+              DTS:DTSID="{BF7BDF7C-04D5-4BC3-B273-8AB9021906F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Region"
+              DTS:DTSID="{8788D130-FD59-4CFE-A237-46045A723A91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Product ID"
+              DTS:DTSID="{0B4C23B4-FA6F-486E-8528-BB183FB2F21F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Category"
+              DTS:DTSID="{4F82EF44-C00A-49CF-875B-017FE8860F26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sub-Category"
+              DTS:DTSID="{8CE910F9-83EE-4FF5-B1BE-79E130DE58C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Product Name"
+              DTS:DTSID="{FFB9A5B3-26EC-48E1-9B4A-C90AA3FF73E3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sales"
+              DTS:DTSID="{B08AA993-4E91-40DF-BAC9-600FBAFDD026}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quantity"
+              DTS:DTSID="{2F4C44CD-273F-4620-8086-983841A4882C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Discount"
+              DTS:DTSID="{2A812D10-D8C9-41C6-A2BB-4375290B5075}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Profit"
+              DTS:DTSID="{20D5B68A-E72D-41D5-B2FD-E74E672FA20B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{5A6AFD54-09FB-4DAF-A9FC-7DF046248C81}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Projects\УД\КДЗ по УД, DW\West_Superstore.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{8BC1E17C-9510-4193-B874-3F643E7A8CFF}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Projects\УД\КДЗ по УД, DW\West_Superstore.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{DF9863CB-1AE2-44CA-9F19-4AF3C8CB1E58}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Projects\УД\КДЗ по УД, DW\West_Superstore.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BD039F8F-6621-49E5-96E2-62826EE09283}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="9"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter="_x000A_"
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="D:\Projects\УД\КДЗ по УД, DW\East_Superstore.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Row ID&quot;"
+              DTS:DTSID="{AEF25F40-9D4C-4183-9541-441E70F0D8D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Order ID&quot;"
+              DTS:DTSID="{9C6289FB-7947-4457-A012-A67500C9FE6A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Order Date&quot;"
+              DTS:DTSID="{F2A69196-7C4B-471F-91BD-6562E2A52E8F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Ship Date&quot;"
+              DTS:DTSID="{29FE8FC8-4C68-4248-BBDB-DBECFF03C6B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Ship Mode&quot;"
+              DTS:DTSID="{3428B46C-A1BF-41DA-82A9-C53E64839FCD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Customer ID&quot;"
+              DTS:DTSID="{F19BFC86-5E24-447A-8FF5-2B216DD0F96D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Customer Name&quot;"
+              DTS:DTSID="{39716662-6464-48D1-BC23-EFAE260503E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Segment&quot;"
+              DTS:DTSID="{AC594750-24EA-469A-9C3A-4232C952DB70}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Country&quot;"
+              DTS:DTSID="{72DFC855-3ED4-4194-A6EC-916F2CDFC5A2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;City&quot;"
+              DTS:DTSID="{84A32C7E-A46D-4E3C-97DC-F33068416719}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;State&quot;"
+              DTS:DTSID="{77460B36-AD06-4529-A94E-3012C9E5177C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Postal Code&quot;"
+              DTS:DTSID="{9697C3EC-82E2-424A-8274-B06051C665EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Region&quot;"
+              DTS:DTSID="{ADCCCC7E-F3DA-4D5F-9E5C-9E504DA936D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Product ID&quot;"
+              DTS:DTSID="{AE4AE1FD-50EB-46BA-9ED7-55E696315BF6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Category&quot;"
+              DTS:DTSID="{308EBE46-5727-42B8-9E5B-2D9151ED4138}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Sub-Category&quot;"
+              DTS:DTSID="{A8064B4B-06D7-4AAE-ADA3-BDFD8C3B2F91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Product Name&quot;"
+              DTS:DTSID="{E273C905-9D0E-42AF-A50E-008E1D0F3E8C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Sales&quot;"
+              DTS:DTSID="{4C35B1AC-8AC3-45AB-824E-35F3BE49FCBF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Quantity&quot;"
+              DTS:DTSID="{18B14E34-32A7-4C04-B0DD-5FAE87303228}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Discount&quot;"
+              DTS:DTSID="{D3484BA8-7E3D-4130-AEAF-0784F24F1F99}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Profit&quot;"
+              DTS:DTSID="{2E1852C1-9C1E-4DFA-A212-204D0FD0D980}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Import]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{EAAB586A-2E54-4FB4-B6EF-2FC187A1FB9A}"
+      DTS:ObjectName="Import">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="9"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="D:\Projects\УД\КДЗ по УД, DW\East_Superstore_0.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Row ID"
+              DTS:DTSID="{00FA8CC9-F388-419F-905E-08D95D4A3ED3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Order ID"
+              DTS:DTSID="{61C6D295-888B-4B11-90E8-102787504BED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Order Date"
+              DTS:DTSID="{ECB2EEF7-FD9A-45BA-A84B-3E26C1EEA26C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Ship Date"
+              DTS:DTSID="{CD85A0B5-20D7-4A85-BD35-7EDB005F4823}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Ship Mode"
+              DTS:DTSID="{98A59D69-B1C9-4373-8B33-83F2EB51800D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Customer ID"
+              DTS:DTSID="{1274FBEC-C2CA-4D47-9D8B-2CD4242C5589}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Customer Name"
+              DTS:DTSID="{7F5C9DC7-9B69-4D6D-9D95-1B21620F50CB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Segment"
+              DTS:DTSID="{1C5EF934-7B2A-46E5-81E7-60F77454EAFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{CC0A4E17-0643-4FD6-8B24-FFD73931A561}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{966A55DF-BB1D-4528-B512-C9A2AF16452F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State"
+              DTS:DTSID="{CB57A6EE-9B54-43AB-8A5C-9EA96A650385}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Postal Code"
+              DTS:DTSID="{C7EE2C2E-B58B-4074-9295-D37664896BA0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Region"
+              DTS:DTSID="{3CA0C59C-3541-4381-8167-41858AA56608}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Product ID"
+              DTS:DTSID="{A26C1252-FB41-4657-82EA-ADC6F5F9C9CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Category"
+              DTS:DTSID="{A699A826-091D-4BD1-9A80-E8D18CF54F35}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sub-Category"
+              DTS:DTSID="{925838F5-2901-4650-B731-FE72B86DE6FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Product Name"
+              DTS:DTSID="{DF5B4F64-1DBD-4FB9-B772-45A18F273132}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sales"
+              DTS:DTSID="{FBDBFD7C-848C-4883-83B3-2F17A07A0EDC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quantity"
+              DTS:DTSID="{71548226-61B9-440C-AAA6-97A70BB64A83}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Discount"
+              DTS:DTSID="{58EFAB5A-A422-4F1E-B3F2-62DC4EEE779C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Profit"
+              DTS:DTSID="{90E23E71-FF15-41DA-93B3-421CBAA8B119}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[YOBA]"
+      DTS:CreationName="ADO.NET:SQL"
+      DTS:DTSID="{19C4C4C0-1EB2-481B-B423-42291C22EE86}"
+      DTS:ObjectName="YOBA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=ZVERDVD-IUAC6N5\DEVELOPERSERVER;Integrated Security=SSPI;Connect Timeout=30;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ZVERDVD-IUAC6N5\DEVELOPERSERVER.OnlineShopDW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F89C4B27-94F4-468A-9278-0E96C523385D}"
+      DTS:ObjectName="ZVERDVD-IUAC6N5\DEVELOPERSERVER.OnlineShopDW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=ZVERDVD-IUAC6N5\DEVELOPERSERVER;Initial Catalog=OnlineShopDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
-  <DTS:Executables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Задача &quot;Выполнение SQL&quot;"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Задача &quot;Выполнение SQL&quot;"
+      DTS:DTSID="{1F191B9C-2968-4EFA-A7B8-CCA9FB8CAF34}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Задача &quot;Выполнение SQL&quot;"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F89C4B27-94F4-468A-9278-0E96C523385D}"
+          SQLTask:SqlStatementSource="truncate table FactSales&#xA;delete dimProduct&#xA;delete dimCustomer&#xA;delete dimSubcategory&#xA;delete dimCategory&#xA;delete dimShipment&#xA;delete dimGeography" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Задача потока данных"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Задача потока данных"
+      DTS:DTSID="{13EB2499-DED5-4365-84B8-E385E6A572CF}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Задача потока данных"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Задача потока данных\Eastern Region (csv)"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Источник &quot;Неструктурированный файл&quot;;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;1"
+              description="Источник &quot;Неструктурированный файл&quot;"
+              localeId="1049"
+              name="Eastern Region (csv)"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Указывает, считается ли, что столбцы нулевой длины имеют значение NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает имя файла выходного столбца, содержащего имя файла. Если не указано имя, выходной столбец, содержащий имя файла, не будет сформирован."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Задача потока данных\Eastern Region (csv).Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CSV_rus_output]"
+                  connectionManagerRefId="Package.ConnectionManagers[CSV_rus_output]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;]"
+                  name="Выход источника &quot;Неструктурированный файл&quot;">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Row ID]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Row ID]"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Row ID]"
+                      name="Row ID"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Product ID]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Product ID]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Product ID]"
+                      name="Product ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Category]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Category]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Category]"
+                      name="Category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Sub-Category]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Sub-Category]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Sub-Category]"
+                      name="Sub-Category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Product Name]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Product Name]"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Product Name]"
+                      name="Product Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, являются ли данные двоичными."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Row ID]"
+                      dataType="numeric"
+                      name="Row ID"
+                      precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Order ID]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Order ID" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Order Date]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Order Date" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Ship Date]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Ship Date" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Ship Mode]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Ship Mode" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Customer ID]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Customer ID" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Customer Name]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Customer Name" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Segment]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Segment" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Country]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[City]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[State]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Postal Code]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Postal Code" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Region]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Region" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Product ID]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Product ID" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Category]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Category" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Sub-Category]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Sub-Category" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Product Name]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Product Name" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Sales]"
+                      dataType="r4"
+                      name="Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Quantity]"
+                      dataType="r4"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Discount]"
+                      dataType="r4"
+                      name="Discount" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].ExternalColumns[Profit]"
+                      dataType="r4"
+                      name="Profit" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;]"
+                  isErrorOut="true"
+                  name="Вывод ошибок источника &quot;Неструктурированный файл&quot;">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;].Columns[Столбец вывода ошибок источника &quot;Неструктурированный файл&quot;]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Столбец вывода ошибок источника &quot;Неструктурированный файл&quot;"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;].Columns[Столбец вывода ошибок источника &quot;Неструктурированный файл&quot;]"
+                      name="Столбец вывода ошибок источника &quot;Неструктурированный файл&quot;" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Eastern Region (csv).Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Вывод ошибок источника &quot;Неструктурированный файл&quot;].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Задача потока данных\Western Region (xlsx)"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Источник &quot;Excel&quot;;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;1"
+              description="Источник &quot;Excel&quot;"
+              name="Western Region (xlsx)"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Время ожидания команды, в секундах. Величина 0 означает неограниченное время ожидания."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает имя объекта базы данных, используемого для открытия набора строк."
+                  name="OpenRowset">Western_Region$</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает переменную, содержащую имя объекта базы данных, используемого для открытия набора строк."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Команда SQL для выполнения."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Переменная, содержащая команду SQL для выполнения."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает используемый режим доступа к базе данных."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Сопоставление между параметрами в команде SQL и переменными."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Задача потока данных\Western Region (xlsx).Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 2]"
+                  description="Соединение OLE DB среды выполнения, используемое для доступа к базе данных."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;]"
+                  name="Выход источника &quot;Excel&quot;">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Sub-Category]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Sub-Category]"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Sub-Category]"
+                      name="Sub-Category"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Category]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Category]"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Category]"
+                      name="Category"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Product Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Product Name]"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Product Name]"
+                      name="Product Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Product ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Product ID]"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Product ID]"
+                      name="Product ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Row ID]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Row ID]"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Row ID]"
+                      name="Row ID"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Row ID]"
+                      dataType="r8"
+                      name="Row ID" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Order ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Order ID" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Order Date]"
+                      dataType="date"
+                      name="Order Date" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Ship Date]"
+                      dataType="date"
+                      name="Ship Date" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Ship Mode]"
+                      dataType="wstr"
+                      length="255"
+                      name="Ship Mode" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Customer ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Customer ID" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Customer Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Customer Name" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Segment]"
+                      dataType="wstr"
+                      length="255"
+                      name="Segment" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Country]"
+                      dataType="wstr"
+                      length="255"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="255"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[State]"
+                      dataType="wstr"
+                      length="255"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Postal Code]"
+                      dataType="r8"
+                      name="Postal Code" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Region]"
+                      dataType="wstr"
+                      length="255"
+                      name="Region" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Product ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Product ID" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Category]"
+                      dataType="wstr"
+                      length="255"
+                      name="Category" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Sub-Category]"
+                      dataType="wstr"
+                      length="255"
+                      name="Sub-Category" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Product Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Product Name" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Sales]"
+                      dataType="r8"
+                      name="Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Quantity]"
+                      dataType="r8"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Discount]"
+                      dataType="r8"
+                      name="Discount" />
+                    <externalMetadataColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].ExternalColumns[Profit]"
+                      dataType="r8"
+                      name="Profit" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;]"
+                  isErrorOut="true"
+                  name="Вывод ошибок источника &quot;Excel&quot;">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[Sub-Category]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[Sub-Category]"
+                      name="Sub-Category" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[Category]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[Category]"
+                      name="Category" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[Product Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[Product Name]"
+                      name="Product Name" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[Product ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[Product ID]"
+                      name="Product ID" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[Row ID]"
+                      dataType="r8"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Вывод ошибок источника &quot;Excel&quot;].Columns[Row ID]"
+                      name="Row ID" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Задача потока данных\Преобразование данных"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Преобразование данных;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;0"
+              description="Преобразование данных"
+              name="Преобразование данных"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных]"
+                  name="Входные данные преобразования данных">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[Sub-Category]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Sub-Category"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Sub-Category]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[Category]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Category"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Category]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[Product Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Product Name"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Product Name]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[Product ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Product ID"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Product ID]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[Row ID]"
+                      cachedDataType="r8"
+                      cachedName="Row ID"
+                      lineageId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;].Columns[Row ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных]"
+                  exclusionGroup="1"
+                  name="Выходные данные преобразования данных"
+                  synchronousInputId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Sub-Category]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Sub-Category]"
+                      name="Copy of Sub-Category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника "Excel"].Columns[Sub-Category]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Category]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Category]"
+                      name="Copy of Category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника "Excel"].Columns[Category]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Product Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Product Name]"
+                      name="Copy of Product Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника "Excel"].Columns[Product Name]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Product ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Product ID]"
+                      name="Copy of Product ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника "Excel"].Columns[Product ID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Row ID]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Row ID]"
+                      name="Copy of Row ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника "Excel"].Columns[Row ID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Выходные данные ошибок преобразования данных"
+                  synchronousInputId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Задача потока данных\Преобразование данных 1"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Преобразование данных;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;0"
+              description="Преобразование данных"
+              name="Преобразование данных 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Задача потока данных\Преобразование данных 1.Inputs[Входные данные преобразования данных]"
+                  name="Входные данные преобразования данных">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных 1.Inputs[Входные данные преобразования данных].Columns[Row ID]"
+                      cachedDataType="numeric"
+                      cachedName="Row ID"
+                      cachedPrecision="18"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Row ID]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных 1.Inputs[Входные данные преобразования данных].Columns[Product ID]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Product ID"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Product ID]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных 1.Inputs[Входные данные преобразования данных].Columns[Category]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Category"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Category]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных 1.Inputs[Входные данные преобразования данных].Columns[Sub-Category]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Sub-Category"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Sub-Category]" />
+                    <inputColumn
+                      refId="Package\Задача потока данных\Преобразование данных 1.Inputs[Входные данные преобразования данных].Columns[Product Name]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Product Name"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Product Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных]"
+                  exclusionGroup="1"
+                  name="Выходные данные преобразования данных"
+                  synchronousInputId="Package\Задача потока данных\Преобразование данных 1.Inputs[Входные данные преобразования данных]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Row ID]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Row ID]"
+                      name="Copy of Row ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника "Неструктурированный файл"].Columns[Row ID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Product ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Product ID]"
+                      name="Copy of Product ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника "Неструктурированный файл"].Columns[Product ID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Category]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Category]"
+                      name="Copy of Category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника "Неструктурированный файл"].Columns[Category]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Sub-Category]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Sub-Category]"
+                      name="Copy of Sub-Category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника "Неструктурированный файл"].Columns[Sub-Category]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Product Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="1000"
+                      lineageId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Product Name]"
+                      name="Copy of Product Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника "Неструктурированный файл"].Columns[Product Name]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные ошибок преобразования данных]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Выходные данные ошибок преобразования данных"
+                  synchronousInputId="Package\Задача потока данных\Преобразование данных 1.Inputs[Входные данные преобразования данных]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Задача потока данных\Производный столбец"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Производный столбец;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;0"
+              description="Создает новые значения столбцов путем применения выражений к входным столбцам преобразования. Создает новые столбцы или перезаписывает существующие. Пример: объединение значений столбцов &quot;first name&quot; и &quot;last name&quot; и создание столбца &quot;full name&quot;."
+              name="Производный столбец"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Задача потока данных\Производный столбец.Inputs[Вход производного столбца]"
+                  description="Ввод преобразования &quot;Производный столбец&quot;"
+                  name="Вход производного столбца">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Задача потока данных\Производный столбец.Outputs[Выход производного столбца]"
+                  description="Выход по умолчанию преобразования &quot;Производный столбец&quot;"
+                  exclusionGroup="1"
+                  name="Выход производного столбца"
+                  synchronousInputId="Package\Задача потока данных\Производный столбец.Inputs[Вход производного столбца]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Задача потока данных\Производный столбец.Outputs[Вывод ошибок производного столбца]"
+                  description="Вывод ошибок преобразования &quot;Производный столбец&quot;"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Вывод ошибок производного столбца"
+                  synchronousInputId="Package\Задача потока данных\Производный столбец.Inputs[Вход производного столбца]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Производный столбец.Outputs[Вывод ошибок производного столбца].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Производный столбец.Outputs[Вывод ошибок производного столбца].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Производный столбец.Outputs[Вывод ошибок производного столбца].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Производный столбец.Outputs[Вывод ошибок производного столбца].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Задача потока данных\Производный столбец 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Производный столбец;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;0"
+              description="Создает новые значения столбцов путем применения выражений к входным столбцам преобразования. Создает новые столбцы или перезаписывает существующие. Пример: объединение значений столбцов &quot;first name&quot; и &quot;last name&quot; и создание столбца &quot;full name&quot;."
+              name="Производный столбец 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Задача потока данных\Производный столбец 1.Inputs[Вход производного столбца]"
+                  description="Ввод преобразования &quot;Производный столбец&quot;"
+                  name="Вход производного столбца">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Задача потока данных\Производный столбец 1.Outputs[Выход производного столбца]"
+                  description="Выход по умолчанию преобразования &quot;Производный столбец&quot;"
+                  exclusionGroup="1"
+                  name="Выход производного столбца"
+                  synchronousInputId="Package\Задача потока данных\Производный столбец 1.Inputs[Вход производного столбца]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Задача потока данных\Производный столбец 1.Outputs[Вывод ошибок производного столбца]"
+                  description="Вывод ошибок преобразования &quot;Производный столбец&quot;"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Вывод ошибок производного столбца"
+                  synchronousInputId="Package\Задача потока данных\Производный столбец 1.Inputs[Вход производного столбца]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Производный столбец 1.Outputs[Вывод ошибок производного столбца].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Производный столбец 1.Outputs[Вывод ошибок производного столбца].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Задача потока данных\Производный столбец 1.Outputs[Вывод ошибок производного столбца].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Задача потока данных\Производный столбец 1.Outputs[Вывод ошибок производного столбца].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Задача потока данных\Сортировка"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Сортировка;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;1"
+              description="Сортирует входные данные по возрастанию или убыванию, если выполнить сортировку в источнике нельзя. Пример: сортировка данных продаж по полю &quot;customer id&quot; перед записью в неструктурированный файл и передачей в другой отдел. Примечание. Это преобразование не рекомендуется применять к большим потокам данных."
+              name="Сортировка"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Указывает, удаляет ли преобразование &quot;Сортировка&quot; строки с повторяющимися значениями сортировки."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает максимальное число потоков, используемых для сортировки."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Задача потока данных\Сортировка.Inputs[Вход сортировки]"
+                  name="Вход сортировки">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка.Inputs[Вход сортировки].Columns[Copy of Sub-Category]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Copy of Sub-Category"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Sub-Category]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка.Inputs[Вход сортировки].Columns[Copy of Category]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Copy of Category"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Category]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка.Inputs[Вход сортировки].Columns[Copy of Product Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Copy of Product Name"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Product Name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка.Inputs[Вход сортировки].Columns[Copy of Product ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Copy of Product ID"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Product ID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка.Inputs[Вход сортировки].Columns[Copy of Row ID]"
+                      cachedDataType="i8"
+                      cachedName="Copy of Row ID"
+                      lineageId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Row ID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Задача потока данных\Сортировка.Outputs[Выход сортировки]"
+                  isSorted="true"
+                  name="Выход сортировки">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка.Outputs[Выход сортировки].Columns[Copy of Sub-Category]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Сортировка.Outputs[Выход сортировки].Columns[Copy of Sub-Category]"
+                      name="Copy of Sub-Category"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Sub-Category]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка.Outputs[Выход сортировки].Columns[Copy of Category]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Сортировка.Outputs[Выход сортировки].Columns[Copy of Category]"
+                      name="Copy of Category">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Category]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка.Outputs[Выход сортировки].Columns[Copy of Product Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Сортировка.Outputs[Выход сортировки].Columns[Copy of Product Name]"
+                      name="Copy of Product Name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Product Name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка.Outputs[Выход сортировки].Columns[Copy of Product ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Сортировка.Outputs[Выход сортировки].Columns[Copy of Product ID]"
+                      name="Copy of Product ID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Product ID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка.Outputs[Выход сортировки].Columns[Copy of Row ID]"
+                      dataType="i8"
+                      lineageId="Package\Задача потока данных\Сортировка.Outputs[Выход сортировки].Columns[Copy of Row ID]"
+                      name="Copy of Row ID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[Copy of Row ID]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Задача потока данных\Сортировка 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Сортировка;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;1"
+              description="Сортирует входные данные по возрастанию или убыванию, если выполнить сортировку в источнике нельзя. Пример: сортировка данных продаж по полю &quot;customer id&quot; перед записью в неструктурированный файл и передачей в другой отдел. Примечание. Это преобразование не рекомендуется применять к большим потокам данных."
+              name="Сортировка 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Указывает, удаляет ли преобразование &quot;Сортировка&quot; строки с повторяющимися значениями сортировки."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает максимальное число потоков, используемых для сортировки."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Задача потока данных\Сортировка 1.Inputs[Вход сортировки]"
+                  name="Вход сортировки">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Inputs[Вход сортировки].Columns[Row ID]"
+                      cachedDataType="numeric"
+                      cachedName="Row ID"
+                      cachedPrecision="18"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Row ID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Inputs[Вход сортировки].Columns[Product ID]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Product ID"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Product ID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Inputs[Вход сортировки].Columns[Category]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Category"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Category]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Inputs[Вход сортировки].Columns[Sub-Category]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Sub-Category"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Sub-Category]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Inputs[Вход сортировки].Columns[Product Name]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Product Name"
+                      lineageId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;].Columns[Product Name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Inputs[Вход сортировки].Columns[Copy of Row ID]"
+                      cachedDataType="i8"
+                      cachedName="Copy of Row ID"
+                      lineageId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Row ID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Inputs[Вход сортировки].Columns[Copy of Product ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Copy of Product ID"
+                      lineageId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Product ID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Inputs[Вход сортировки].Columns[Copy of Category]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Copy of Category"
+                      lineageId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Category]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Inputs[Вход сортировки].Columns[Copy of Sub-Category]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Copy of Sub-Category"
+                      lineageId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Sub-Category]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Inputs[Вход сортировки].Columns[Copy of Product Name]"
+                      cachedDataType="wstr"
+                      cachedLength="1000"
+                      cachedName="Copy of Product Name"
+                      lineageId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Product Name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Задает параметры сравнения символьных данных."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Указывает порядок сортировки столбца."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки]"
+                  isSorted="true"
+                  name="Выход сортировки">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Row ID]"
+                      dataType="numeric"
+                      lineageId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Row ID]"
+                      name="Row ID"
+                      precision="18">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника "Неструктурированный файл"].Columns[Row ID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Product ID]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Product ID]"
+                      name="Product ID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника "Неструктурированный файл"].Columns[Product ID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Category]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Category]"
+                      name="Category">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника "Неструктурированный файл"].Columns[Category]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Sub-Category]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Sub-Category]"
+                      name="Sub-Category">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника "Неструктурированный файл"].Columns[Sub-Category]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Product Name]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Product Name]"
+                      name="Product Name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника "Неструктурированный файл"].Columns[Product Name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Copy of Row ID]"
+                      dataType="i8"
+                      lineageId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Copy of Row ID]"
+                      name="Copy of Row ID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Row ID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Copy of Product ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Copy of Product ID]"
+                      name="Copy of Product ID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Product ID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Copy of Category]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Copy of Category]"
+                      name="Copy of Category"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Category]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Copy of Sub-Category]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Copy of Sub-Category]"
+                      name="Copy of Sub-Category">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Sub-Category]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Copy of Product Name]"
+                      dataType="wstr"
+                      length="1000"
+                      lineageId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки].Columns[Copy of Product Name]"
+                      name="Copy of Product Name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает идентификатор журнала обращений и преобразований входного столбца, связанного с этим выходным столбцом."
+                          name="SortColumnId">#{Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных].Columns[Copy of Product Name]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Задача потока данных.Paths[Выход источника &quot;Excel&quot;]"
+              endId="Package\Задача потока данных\Преобразование данных.Inputs[Входные данные преобразования данных]"
+              name="Выход источника &quot;Excel&quot;"
+              startId="Package\Задача потока данных\Western Region (xlsx).Outputs[Выход источника &quot;Excel&quot;]" />
+            <path
+              refId="Package\Задача потока данных.Paths[Выход источника &quot;Неструктурированный файл&quot;]"
+              endId="Package\Задача потока данных\Преобразование данных 1.Inputs[Входные данные преобразования данных]"
+              name="Выход источника &quot;Неструктурированный файл&quot;"
+              startId="Package\Задача потока данных\Eastern Region (csv).Outputs[Выход источника &quot;Неструктурированный файл&quot;]" />
+            <path
+              refId="Package\Задача потока данных.Paths[Выход сортировки]"
+              endId="Package\Задача потока данных\Производный столбец.Inputs[Вход производного столбца]"
+              name="Выход сортировки"
+              startId="Package\Задача потока данных\Сортировка.Outputs[Выход сортировки]" />
+            <path
+              refId="Package\Задача потока данных.Paths[Выход сортировки1]"
+              endId="Package\Задача потока данных\Производный столбец 1.Inputs[Вход производного столбца]"
+              name="Выход сортировки"
+              startId="Package\Задача потока данных\Сортировка 1.Outputs[Выход сортировки]" />
+            <path
+              refId="Package\Задача потока данных.Paths[Выходные данные преобразования данных]"
+              endId="Package\Задача потока данных\Сортировка.Inputs[Вход сортировки]"
+              name="Выходные данные преобразования данных"
+              startId="Package\Задача потока данных\Преобразование данных.Outputs[Выходные данные преобразования данных]" />
+            <path
+              refId="Package\Задача потока данных.Paths[Выходные данные преобразования данных1]"
+              endId="Package\Задача потока данных\Сортировка 1.Inputs[Вход сортировки]"
+              name="Выходные данные преобразования данных"
+              startId="Package\Задача потока данных\Преобразование данных 1.Outputs[Выходные данные преобразования данных]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="207.2,41.6"
+          Id="Package\Задача &quot;Выполнение SQL&quot;"
+          TopLeft="220.571432327738,9.17647071693183" />
+        <NodeLayout
+          Size="188.8,41.6"
+          Id="Package\Задача потока данных"
+          TopLeft="240.000004087176,100.329413171788" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Задача потока данных">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="176,41.6"
+          Id="Package\Задача потока данных\Eastern Region (csv)"
+          TopLeft="393.80953051606,3.50980392871849" />
+        <NodeLayout
+          Size="182.4,41.6"
+          Id="Package\Задача потока данных\Western Region (xlsx)"
+          TopLeft="47.2857150909852,11.3882354678579" />
+        <NodeLayout
+          Size="199.2,41.6"
+          Id="Package\Задача потока данных\Преобразование данных"
+          TopLeft="62.8571439275936,136.627452896541" />
+        <EdgeLayout
+          Id="Package\Задача потока данных.Paths[Выход источника &quot;Excel&quot;]"
+          TopLeft="138.485715090985,52.9882354678579">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="23.9714288366084,83.6392174286827"
+              Start="0,0"
+              End="23.9714288366084,76.1392174286827">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.8196087143413" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.8196087143413"
+                    Point2="0,41.8196087143413"
+                    Point3="4,41.8196087143413" />
+                  <mssgle:LineSegment
+                    End="19.9714288366084,41.8196087143413" />
+                  <mssgle:CubicBezierSegment
+                    Point1="19.9714288366084,41.8196087143413"
+                    Point2="23.9714288366084,41.8196087143413"
+                    Point3="23.9714288366084,45.8196087143413" />
+                  <mssgle:LineSegment
+                    End="23.9714288366084,76.1392174286827" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="208.8,41.6"
+          Id="Package\Задача потока данных\Преобразование данных 1"
+          TopLeft="432.380959744356,134.588237181667" />
+        <EdgeLayout
+          Id="Package\Задача потока данных.Paths[Выход источника &quot;Неструктурированный файл&quot;]"
+          TopLeft="481.80953051606,45.1098039287185">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="54.9714292282962,89.4784332529483"
+              Start="0,0"
+              End="54.9714292282962,81.9784332529483">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.7392166264742" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40.7392166264742"
+                    Point2="0,44.7392166264742"
+                    Point3="4,44.7392166264742" />
+                  <mssgle:LineSegment
+                    End="50.9714292282962,44.7392166264742" />
+                  <mssgle:CubicBezierSegment
+                    Point1="50.9714292282962,44.7392166264742"
+                    Point2="54.9714292282962,44.7392166264742"
+                    Point3="54.9714292282962,48.7392166264742" />
+                  <mssgle:LineSegment
+                    End="54.9714292282962,81.9784332529483" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="136,41.6"
+          Id="Package\Задача потока данных\Сортировка"
+          TopLeft="137.142859478386,205.960787202248" />
+        <NodeLayout
+          Size="144.8,41.6"
+          Id="Package\Задача потока данных\Сортировка 1"
+          TopLeft="504.761913357949,233.490199353043" />
+        <EdgeLayout
+          Id="Package\Задача потока данных.Paths[Выходные данные преобразования данных]"
+          TopLeft="162.457143927594,178.227452896541">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="42.6857155507925,27.7333343057072"
+              Start="0,0"
+              End="42.6857155507925,20.2333343057072">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.86666715285359" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.86666715285359"
+                    Point2="0,13.8666671528536"
+                    Point3="4,13.8666671528536" />
+                  <mssgle:LineSegment
+                    End="38.6857155507925,13.8666671528536" />
+                  <mssgle:CubicBezierSegment
+                    Point1="38.6857155507925,13.8666671528536"
+                    Point2="42.6857155507925,13.8666671528536"
+                    Point3="42.6857155507925,17.8666671528536" />
+                  <mssgle:LineSegment
+                    End="42.6857155507925,20.2333343057072" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Задача потока данных.Paths[Выходные данные преобразования данных1]"
+          TopLeft="536.780959744356,176.188237181667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="40.3809536135927,57.3019621713764"
+              Start="0,0"
+              End="40.3809536135927,49.8019621713764">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.6509810856882" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.6509810856882"
+                    Point2="0,28.6509810856882"
+                    Point3="4,28.6509810856882" />
+                  <mssgle:LineSegment
+                    End="36.3809536135927,28.6509810856882" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36.3809536135927,28.6509810856882"
+                    Point2="40.3809536135927,28.6509810856882"
+                    Point3="40.3809536135927,32.6509810856882" />
+                  <mssgle:LineSegment
+                    End="40.3809536135927,49.8019621713764" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="187.2,41.6"
+          Id="Package\Задача потока данных\Производный столбец"
+          TopLeft="160.000002724784,308.941180803372" />
+        <EdgeLayout
+          Id="Package\Задача потока данных.Paths[Выход сортировки]"
+          TopLeft="205.142859478386,247.560787202248">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48.4571432463977,61.3803936011239"
+              Start="0,0"
+              End="48.4571432463977,53.8803936011239">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.6901968005619" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.6901968005619"
+                    Point2="0,30.6901968005619"
+                    Point3="4,30.6901968005619" />
+                  <mssgle:LineSegment
+                    End="44.4571432463977,30.6901968005619" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44.4571432463977,30.6901968005619"
+                    Point2="48.4571432463977,30.6901968005619"
+                    Point3="48.4571432463977,34.6901968005619" />
+                  <mssgle:LineSegment
+                    End="48.4571432463977,53.8803936011239" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="16.2285716231988,35.6901968005619,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="196.8,41.6"
+          Id="Package\Задача потока данных\Производный столбец 1"
+          TopLeft="467.619055582553,326.117651034117" />
+        <EdgeLayout
+          Id="Package\Задача потока данных.Paths[Выход сортировки1]"
+          TopLeft="577.161913357949,275.090199353043">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-11.1428577753962,51.0274516810733"
+              Start="0,0"
+              End="-11.1428577753962,43.5274516810733">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5137258405366" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.5137258405366"
+                    Point2="0,25.5137258405366"
+                    Point3="-4,25.5137258405366" />
+                  <mssgle:LineSegment
+                    End="-7.14285777539624,25.5137258405366" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7.14285777539624,25.5137258405366"
+                    Point2="-11.1428577753962,25.5137258405366"
+                    Point3="-11.1428577753962,29.5137258405366" />
+                  <mssgle:LineSegment
+                    End="-11.1428577753962,43.5274516810733" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-13.5714288876981,30.5137258405366,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Задача потока данных\Western Region (xlsx)">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
