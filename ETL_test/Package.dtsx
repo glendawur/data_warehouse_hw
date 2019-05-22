@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/22/2019 11:32:42 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ZVERDVD-IUAC6N5"
+  DTS:CreatorName="ZVERDVD-IUAC6N5\Zver"
+  DTS:DTSID="{704D81DC-7C93-44E4-9799-0C238F6E54E0}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1100.123"
+  DTS:LocaleID="1049"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionGUID="{789DCFE8-7DCB-4170-ABB6-017415F103C6}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables />
+</DTS:Executable>
