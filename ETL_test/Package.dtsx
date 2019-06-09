@@ -11,8 +11,8 @@
   DTS:LocaleID="1049"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="127"
-  DTS:VersionGUID="{E6763568-F663-49B9-B643-71A7210ACE44}">
+  DTS:VersionBuild="130"
+  DTS:VersionGUID="{6BB61216-636B-429D-8960-A45252CD3E0A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2857,7 +2857,7 @@ where [refTable].[CustomerKey] = ? and [refTable].[ProductKey] = ? and [refTable
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{F89C4B27-94F4-468A-9278-0E96C523385D}"
-          SQLTask:SqlStatementSource="truncate table FactSales&#xA;truncate table FactSalesCatalog&#xA;delete dimProduct&#xA;delete dimCustomer&#xA;delete dimSubcategory&#xA;delete dimCategory&#xA;delete dimShipment&#xA;delete dimGeography" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table FactSales&#xA;truncate table FactSalesCatalog&#xA;truncate table Request&#xA;delete dimProduct&#xA;delete dimCustomer&#xA;delete dimSubcategory&#xA;delete dimCategory&#xA;delete dimSegment&#xA;delete dimShipment&#xA;delete dimGeography" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -26040,9 +26040,7 @@ where [refTable].[ProductCategoryName] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26100,9 +26098,7 @@ where [refTable].[ProductCategoryName] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26114,7 +26110,7 @@ where [refTable].[ProductCategoryName] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -26124,7 +26120,7 @@ where [refTable].[ProductCategoryName] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
